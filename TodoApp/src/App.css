@@ -1,0 +1,85 @@
+.contenedor{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo{
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.formulario{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.input{
+  padding: 10px;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.boton, .botonRojo{
+  padding: 10px 15px;
+  border: none;
+  color:white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.boton{
+  background: rgb(70, 5, 131);
+}
+
+.boton:hover{
+  background: orangered;
+}
+
+.botonRojo{
+  margin-top: 10px;
+  background-color: #dc3545;
+}
+
+.botonRojo:hover{
+  background: #a71d2a;
+}
+
+.lista{
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  gap:15px;
+  justify-items:center;
+}
+
+.tarea{
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+}
+
+.textoTarea{
+  flex:1;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.botonEliminar{
+  background: #ff5252;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor:pointer;
+  transition: 0.2s;
+}
+
+.botonEliminar:hover{
+  background: #d32f2f;
+}
