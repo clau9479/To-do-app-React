@@ -7,14 +7,14 @@ export default function Notas({ tarea, toggleCompletada, eliminarTarea, cambiarC
         textDecoration: tarea.completada ? "line-through" : "none",
         opacity: tarea.completada ? 0.6 : 1,
       }}
-      >
+    >
       <input
         type="checkbox"
         checked={tarea.completada}
         onChange={() => toggleCompletada(tarea.id)}
       />
 
-      <span className="texto-tarea">{tarea.texto}</span>
+      <span className="textoTarea">{tarea.texto}</span>
 
       <input
         type="color"
@@ -25,7 +25,6 @@ export default function Notas({ tarea, toggleCompletada, eliminarTarea, cambiarC
       <button className="botonEliminar" onClick={() => eliminarTarea(tarea.id)}>
         X
       </button>
-    
     </div>
   );
 }
